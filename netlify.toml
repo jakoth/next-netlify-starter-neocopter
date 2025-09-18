@@ -1,3 +1,14 @@
 [build]
   command = "npm run build"
   publish = ".next"
+  # netlify.toml
+
+#[[rewrites]]
+#  from = "/help/*"
+#  to = "https://chatbase.co/TNjB_E4fqCEvhZ1jNSKwE/help/:splat"
+#  status = 200 # A 200 status indicates a rewrite, not a redirect
+
+[[rewrites]]
+  from = "/help"
+  to = "https://chatbase.co/TNjB_E4fqCEvhZ1jNSKwE/help"
+  status = 200
